@@ -350,3 +350,43 @@ Nosso código do arquivo **include_require.php** ficará assim:
 No navegador podemos ver o resultado:
 
 <img src="img\require_once_no_error.png">
+
+# VARIÁVEIS E SEUS TIPOS
+
+Vamos aprender sobre variáveis e seus tipos no PHP;
+
+Iremos começar com STRING.
+
+O que é uma string? Em termos técnicos é uma cadeia de caracteres ou textos.
+
+No PHP, tudo que é colocado entre ( "" ) ou ( '' ) será considerado uma string/texto;
+
+Para ajudar no nosso entendimento desse assunto iremos criar um arquivo chamado "variável.php", dentro da pasta public do nosso projeto;
+
+Onde iremos inserir o seguinte código:
+
+~~~php
+<?php
+//Tipos de Variáveis no PHP
+
+//string -- É um conjunto de caracteres, colocados sempres dentro de aspas simples ou duplas;
+echo gettype("mfsdfmsdflm34mlsdmfslm");
+
+//numbers --integers --float(double)
+
+//booleans
+
+//arrays
+
+//object
+
+//null
+~~~
+
+Note que no primeiro tipo que estamos estudamos eu adicionei o comando "acho gettype( )";
+
+Esse comando irá fazer com que seja exibido o tipo do conteúdo que estiver dentro dos parênteses;
+
+O resultado será o seguinte no navegador
+
+<img src="img\string.png">
