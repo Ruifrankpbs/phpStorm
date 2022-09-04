@@ -382,6 +382,22 @@ echo gettype("mfsdfmsdflm34mlsdmfslm");
 
 //null
 ~~~
+Variável é uma representação de um valor, no PHP temos os seguintes tipos de dados:
+string 
+
+numbers --integers --float(double)
+
+booleans
+
+arrays
+
+object
+
+null
+
+## string 
+
+É um conjunto de caracteres, colocados sempres dentro de aspas simples ou duplas;
 
 Note que no primeiro tipo que estamos estudamos eu adicionei o comando "acho gettype( )";
 
@@ -390,3 +406,423 @@ Esse comando irá fazer com que seja exibido o tipo do conteúdo que estiver den
 O resultado será o seguinte no navegador
 
 <img src="img\string.png">
+
+## numbers --integers --float(double)
+
+É um número, que pode ser do tipo INTEGER, FLOAT/DOUBLE
+
+~~~php
+<?php
+//Tipos de Variáveis no PHP
+
+//string -- É um conjunto de caracteres, colocados sempres dentro de aspas simples ou duplas;
+echo gettype("mfsdfmsdflm34mlsdmfslm");
+
+//numbers --integers --float(double)
+echo gettype(53);
+
+//booleans
+
+//arrays
+
+//object
+
+//null
+~~~
+
+O resultado no navegador será:
+
+<img src="img\integer.png">
+
+E para verificar o tipo float de number faremos:
+
+~~~php
+<?php
+//Tipos de Variáveis no PHP
+
+//string -- É um conjunto de caracteres, colocados sempres dentro de aspas simples ou duplas;
+echo gettype("mfsdfmsdflm34mlsdmfslm");
+
+//numbers --integers --float(double)
+echo gettype(53.53);
+
+//booleans
+
+//arrays
+
+//object
+
+//null
+~~~
+
+No navegador teremos o seguinte resultado:
+
+<img src="img\doubleorfloat.png">
+
+Agora veremos o tipo **boolean**, que existe dois tipos possiveis, false e true.
+
+~~~php
+<?php
+//Tipos de Variáveis no PHP
+
+//string -- É um conjunto de caracteres, colocados sempres dentro de aspas simples ou duplas;
+//echo gettype("mfsdfmsdflm34mlsdmfslm");
+
+//numbers --integers --float(double)
+//echo gettype(53.53);
+
+//booleans
+echo gettype(false);
+echo ("\n")
+echo gettype(true);
+
+//arrays
+
+//object
+
+//null
+~~~
+
+No navegador teremos o seguinte resultado:
+
+<img src="img\boolean.png">
+
+## arrays
+Temos a seguir **arrays** , que é um tipo de variável que nos permite guardar varios tipos de valores.
+
+~~~php
+<?php
+//Tipos de Variáveis no PHP
+
+//string -- É um conjunto de caracteres, colocados sempres dentro de aspas simples ou duplas;
+//echo gettype("mfsdfmsdflm34mlsdmfslm");
+
+//numbers --integers --float(double)
+//echo gettype(53.53);
+
+//booleans
+//echo gettype(false);
+//echo ("\n")
+//echo gettype(true);
+
+//arrays
+echo gettype(['laksfnasfasf', 12, 12.32]);
+
+//object
+
+//null
+~~~
+
+No navegador temos o seguinte resultado:
+
+<img src="img\arrays.png">
+
+## object
+
+Agora veremos o tipo objeto, que pelo conceito de programação orientada a objetos, é uma instância de uma classe, ou seja, uma classe seria ""um projeto de uma casa", e o objeto seria "a casa" com todos os atributos definidos dentro da classe.
+
+~~~php
+<?php
+//Tipos de Variáveis no PHP
+
+//string -- É um conjunto de caracteres, colocados sempres dentro de aspas simples ou duplas;
+//echo gettype("mfsdfmsdflm34mlsdmfslm");
+
+//numbers --integers --float(double)
+//echo gettype(53.53);
+
+//booleans
+//echo gettype(false);
+//echo ("\n")
+//echo gettype(true);
+
+//arrays
+//echo gettype(['laksfnasfasf', 12, 12.32]);
+
+//object
+class Person{
+    
+}
+echo gettype(new Person);
+
+//null
+~~~
+
+No navegador teremos:
+
+<img src="img\object.png">
+
+## null
+
+Null é a "ausência de algum valor"
+
+~~~php
+<?php
+//Tipos de Variáveis no PHP
+
+//string -- É um conjunto de caracteres, colocados sempres dentro de aspas simples ou duplas;
+//echo gettype("mfsdfmsdflm34mlsdmfslm");
+
+//numbers --integers --float(double)
+//echo gettype(53.53);
+
+//booleans
+//echo gettype(false);
+//echo ("\n")
+//echo gettype(true);
+
+//arrays
+//echo gettype(['laksfnasfasf', 12, 12.32]);
+
+//object
+//class Person{
+    
+//}
+//echo gettype(new Person);
+
+//null
+echo gettype(null);
+~~~
+
+E no navegador teremos o resultado:
+
+<img src="img\null.png">
+
+## variáveis
+
+E todos esses valores podem ser guardados e representados por uma Variável;
+
+Para Declarar uma variável no PHP inciamos com **"$"**. Podemos nomear ela no padrão *camelCase* ou  *snake_case*. Nunca devemos começar o nome de uma variável com numeros, poderá começar com letras ou underline,mas nunca com numeros.
+
+~~~php
+<?php
+//declaração de variável
+$nome = "Rui Frank";
+$_sobreNome = "Pinto Oliveira";
+$idadePessoa = (33);
+$Peso = (68.5);
+echo gettype($nome);
+echo "\n";
+echo gettype($_sobreNome);
+echo "\n";
+echo gettype($idadePessoa);
+echo "\n";
+echo gettype($Peso);
+//Tipos de Variáveis no PHP
+
+//string -- É um conjunto de caracteres, colocados sempres dentro de aspas simples ou duplas;
+//echo gettype("mfsdfmsdflm34mlsdmfslm");
+
+//numbers --integers --float(double)
+//echo gettype(53.53);
+
+//booleans
+//echo gettype(false);
+//echo ("\n")
+//echo gettype(true);
+
+//arrays
+//echo gettype(['laksfnasfasf', 12, 12.32]);
+
+//object
+//class Person{
+    
+//}
+//echo gettype(new Person);
+
+//null
+//echo gettype(null);
+~~~
+No navegador teremos o seguinte resultado:
+
+<img src="img\variaveldecla.png">
+
+## Referenciação de variável no PHP
+
+Vejamos um exemplo: 
+
+~~~php
+<?php
+//declaração de variável
+$nome = "Rui Frank";
+$_sobreNome = $nome;
+$nome = "Pinto Oliveira";
+//$Peso = (68.5);
+echo $nome;
+echo $_sobreNome;
+//Tipos de Variáveis no PHP
+
+//string -- É um conjunto de caracteres, colocados sempres dentro de aspas simples ou duplas;
+//echo gettype("mfsdfmsdflm34mlsdmfslm");
+
+//numbers --integers --float(double)
+//echo gettype(53.53);
+
+//booleans
+//echo gettype(false);
+//echo ("\n")
+//echo gettype(true);
+
+//arrays
+//echo gettype(['laksfnasfasf', 12, 12.32]);
+
+//object
+//class Person{
+    
+//}
+//echo gettype(new Person);
+
+//null
+//echo gettype(null);
+~~~
+
+Pela lógica, o resultado será a renderização do sobrenome e depois o nome. Porque primeiramente a variavel $nome recebe determinado valor, em seguida a variavel $_sobreNome recebe o mesmo valor da variável $nome, em seguida a variável $nome recebe um valor diferente, resultando no sobrenome primeiro e depois o nome;
+
+vejamos o resultado no navegador:
+
+<img src="img\refvari1.png">
+
+Mas ao usarmos o simbolo **&** antes da variável esteremos referenciando duas variáveis a um mesmo espaço na memória, ou seja, se uma for alterada as duas são. Nosso código ficará assim:
+
+~~~php
+<?php
+//declaração de variável
+$nome = "Rui Frank";
+$_sobreNome = &$nome;//referenciação
+$nome = "Pinto Oliveira";
+//$Peso = (68.5);
+echo $nome;
+echo $_sobreNome;
+//Tipos de Variáveis no PHP
+
+//string -- É um conjunto de caracteres, colocados sempres dentro de aspas simples ou duplas;
+//echo gettype("mfsdfmsdflm34mlsdmfslm");
+
+//numbers --integers --float(double)
+//echo gettype(53.53);
+
+//booleans
+//echo gettype(false);
+//echo ("\n")
+//echo gettype(true);
+
+//arrays
+//echo gettype(['laksfnasfasf', 12, 12.32]);
+
+//object
+//class Person{
+    
+//}
+//echo gettype(new Person);
+
+//null
+//echo gettype(null);
+~~~
+
+Logo o resultado será que as duas variáveis receberão o valor da ultima alteração no código, que nesse caso repetirá o sobrenome duas vezes:
+
+<img src="img\refvari2.png">
+
+Saiba também que uma variável pode ser criada sem ser atribuido um valor inicial para ela.
+
+## Constantes
+
+Constante é uma varíavel que não varia ( risos!);
+Depois de atribuido um valor a uma constante, não se pode atribuir valores posteriormente.
+
+Para se declarar uma constante, seguimos o seguinte padrão:
+
+**define('NAME', 'Rui Frank');**
+
+~~~php
+<?php
+//Constantes
+define('NAME', 'Rui Frank');
+echo NAME;
+
+//declaração de variável
+//$nome = "Rui Frank";
+//$_sobreNome = &$nome;//referenciação
+//$nome = "Pinto Oliveira";
+//$Peso = (68.5);
+//echo $nome;
+//echo $_sobreNome;
+//Tipos de Variáveis no PHP
+
+//string -- É um conjunto de caracteres, colocados sempres dentro de aspas simples ou duplas;
+//echo gettype("mfsdfmsdflm34mlsdmfslm");
+
+//numbers --integers --float(double)
+//echo gettype(53.53);
+
+//booleans
+//echo gettype(false);
+//echo ("\n")
+//echo gettype(true);
+
+//arrays
+//echo gettype(['laksfnasfasf', 12, 12.32]);
+
+//object
+//class Person{
+    
+//}
+//echo gettype(new Person);
+
+//null
+//echo gettype(null);
+~~~
+
+Como resultado no navegador temos:
+
+<img src="img\constantesphp.png">
+
+Mas se tentarmos modificar o valor já definido na constante:
+
+~~~php
+<?php
+//Constantes
+define('NAME', 'Rui Frank');
+define('NAME', 'Modificação');
+echo NAME;
+
+//declaração de variável
+//$nome = "Rui Frank";
+//$_sobreNome = &$nome;//referenciação
+//$nome = "Pinto Oliveira";
+//$Peso = (68.5);
+//echo $nome;
+//echo $_sobreNome;
+//Tipos de Variáveis no PHP
+
+//string -- É um conjunto de caracteres, colocados sempres dentro de aspas simples ou duplas;
+//echo gettype("mfsdfmsdflm34mlsdmfslm");
+
+//numbers --integers --float(double)
+//echo gettype(53.53);
+
+//booleans
+//echo gettype(false);
+//echo ("\n")
+//echo gettype(true);
+
+//arrays
+//echo gettype(['laksfnasfasf', 12, 12.32]);
+
+//object
+//class Person{
+    
+//}
+//echo gettype(new Person);
+
+//null
+//echo gettype(null);
+~~~
+
+Teremos o seguinte erro no navegador:
+
+<img src="img\erroconstante.png">
+
+Que traduzido para o Português fica: *"Notificação:A constante NAME já foi definida em **/Users/ruifrankpintooliveira/www/phpStorm/phpStorm/public/variavel.php** na linha **4**"*
+
+Em seguida o navegador imprime nosso *echo* como o valor definido.
